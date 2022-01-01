@@ -1,0 +1,22 @@
+<app-header></app-header>
+<div class="container">
+    <h3 class="drop_title">Drag and drop your images</h3>
+    <div class="drop_container">
+        <div (dragover)="dragOver($event)" (drop)="drop($event)" class="drop_zone">
+            <p>Drag and drop image here....</p>
+        </div>
+    </div>
+
+    
+    <div class="preview_container">
+        
+        <div *ngFor="let item of imagesPreview" class="image">
+            <img src="{{item.img}}" alt='image' /> 
+            <span> {{item.name}} </span>
+        </div>
+    </div>
+    
+    <button (click)="addImages()" [disabled]="imagesPreview.length == 0" class="btn_drop">Add Images</button>
+
+    <app-carrousell *ngIf="objImg" [objImg]="objImg"></app-carrousell>
+</div>

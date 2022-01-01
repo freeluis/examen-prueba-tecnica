@@ -1,0 +1,57 @@
+<app-header ></app-header>
+<div class="employees_container"  style="overflow: auto;">
+  
+<!--  -->
+<div class="testing">
+
+  <div class="input_container">
+      <input class="input_filter" placeholder="Search..." (input)="applyFilter($event)" type="text">
+     
+  </div>
+    
+    <div class="table_container">
+      <table mat-table [dataSource]="dataSource" matSort>
+    
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Id </th>
+          <td mat-cell *matCellDef="let row"> {{row.id}} </td>
+        </ng-container>
+    
+        <ng-container matColumnDef="progress">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+          <td mat-cell *matCellDef="let row"> {{row.name}} </td>
+        </ng-container>
+    
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Last Name </th>
+          <td mat-cell *matCellDef="let row"> {{row.last_name}} </td>
+        </ng-container>
+    
+        <ng-container matColumnDef="fruit">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Birthday </th>
+          <td mat-cell *matCellDef="let row"> {{row.birthday}} </td>
+        </ng-container>
+    
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    
+        <tr class="mat-row" *matNoDataRow>
+          <td class="mat-cell" colspan="4">No data matching the filter </td>
+        </tr>
+      </table>
+    
+      <mat-paginator itemsPerPageLabel="" [pageSizeOptions]="[10]" aria-label="Select page of users"></mat-paginator>
+    </div>
+</div>
+
+
+<!--  -->
+  <div class="form_containers">
+    <h3>Register New Employee</h3>
+    <input [(ngModel)]="userData.name" maxlength="30" placeholder="Name..." type="text">
+    <input [(ngModel)]="userData.last_name" maxlength="30" placeholder="Last Name..." type="text">
+    <input [(ngModel)]="userData.birthday" type="date">
+    <button (click)="addEmployee()" [disabled]="!userData.name || !userData.last_name || !userData.birthday">Add Employee</button>
+  </div>
+
+</div>

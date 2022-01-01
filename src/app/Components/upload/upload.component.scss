@@ -1,0 +1,75 @@
+.container{
+    margin-top: 80px;
+    
+    .drop_title{
+        font-size: 25px;
+        font-weight: bold;
+        text-align-last: center;
+    }
+    .drop_container {
+        padding:20px;
+    }
+    .drop_zone {
+        display: flex;
+        height: 200px;
+        width: 80%;
+        margin: auto;
+        cursor: pointer;
+        border: 2px dashed #ccc;
+        border-radius: 6px;
+        margin-bottom: 25px;
+        background-position: center 28px;
+    }
+    .drop_zone>p {
+        margin: auto;
+    }
+    .btn_drop{
+        background: #8BC34A;
+    padding: 8px;
+    width: 15%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bolder;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    }
+    .btn_drop:hover{
+        opacity: 0.6;
+    }
+    .btn_drop:active{
+        opacity: 1;
+        background: #8BC34A;
+    }
+    .btn_drop:disabled{
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+
+    .preview_container{
+width: 100%;
+display: block;
+        .image{
+          width: 20%;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          padding: 5px;
+          margin: 2%;
+          display: inline-block;
+          img{
+            width: 70%;
+            height: 120px;
+            margin: auto;
+            display: block;
+            border-radius: 10px;
+          }
+          span{
+              font-size: 10px;
+          }
+        }
+    }
+}

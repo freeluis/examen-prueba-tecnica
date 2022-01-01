@@ -1,0 +1,134 @@
+
+.wrapper {
+	width:90%;
+	margin:auto;
+	overflow:hidden;
+}
+
+section nav a:hover {
+	opacity: 0.6;
+    border-radius:50px;
+    background: #0174a9 ;
+}
+
+section {
+	width:100%;
+	overflow:hidden;
+	background:#00afff;
+    margin-bottom:0px;
+    height: 10%;
+}
+
+section nav {
+	float: left;;
+	line-height:70px;
+}
+.empresa-container{
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 4px;
+    margin-right: 4px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 8px 12px 8px 12px;
+    width: 14%;
+    margin-top: 1%;
+    float: right;
+    span{
+        font-size: 21px;
+        vertical-align: sub;
+        color:white;
+        transition: 0.3s;
+    }
+    p{
+        display: inline;
+        font-size: 17px;
+        transition: 0.3s;
+        color: white;
+    }
+}
+.empresa-container:hover{
+    opacity: 0.6;
+    span{
+        opacity: 0.6;
+    }
+    p{
+        opacity: 0.6;
+    }
+}
+
+section nav a {
+	display:inline;
+	color: black;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+
+.header_seccion .wrapper nav .search{
+    color: #00afff;
+    font-size: 30px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+@keyframes slidein {
+    from {
+       opacity: 0; 
+
+    }
+  
+    to {
+  opacity: 1;
+    }
+  }
+
+    section, section nav, section nav .logos{
+        -webkit-transition:height 0.3s;
+        -moz-transition:height 0.3s;
+        -ms-transition:height 0.3s;
+        -o-transition:height 0.3s;
+        transition:height 0.3s;
+        }
+
+.show{
+    position: fixed;
+    height: auto;
+    width: 100%;
+    animation-name: showHeader;
+    animation-duration: 0.3s;
+    z-index: 99;
+    top: 0px;
+    left: 0px;
+}
+.hide{
+    position: fixed;
+    height: auto;
+    width: 100%;
+    animation-name: showHeader;
+    animation-duration: 0.3s;
+    z-index: 99;
+    top: -126px;
+    left: 0px;
+}
+
+  .hide{
+    -webkit-transition:top 0.3s;
+    -moz-transition:top 0.3s;
+    -ms-transition:top 0.3s;
+    -o-transition:top 0.3s;
+    transition:top 0.3s;
+  }
+  .show{
+    -webkit-transition:top 0.3s;
+    -moz-transition:top 0.3s;
+    -ms-transition:top 0.3s;
+    -o-transition:top 0.3s;
+    transition:top 0.3s;
+  }

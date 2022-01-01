@@ -1,0 +1,13 @@
+<div class="slideshow-container">
+    <div class="carrousel_img fade" *ngFor="let item of objImg; let indexElmt = index">
+      <img src="{{item.img}}" class="images">
+    </div>
+    
+    
+    <a class="previous_img" (click)="plusSlides(-1)">&#10094;</a>
+    <a class="next_img" (click)="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+
+    

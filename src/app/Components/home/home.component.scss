@@ -1,0 +1,32 @@
+
+.home_container{
+    margin-top: 70px;
+
+    .home_subcontainer{
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px 1px;
+        width: 80%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 5%;
+
+    .title_home{
+        font-size: 25px;
+    text-align: center;
+    }
+
+    .btn_home{
+        width: 30%;
+        padding: 1%;
+        font-size: 15px;
+        font-weight: bolder;
+        background: #0aaefb;
+        border-radius: 15px;
+        outline: none;
+        border: none;
+        display: block;
+        margin: auto;
+    }
+    }
+}

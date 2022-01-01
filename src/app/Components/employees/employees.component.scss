@@ -1,0 +1,112 @@
+.employees_container{
+margin-top: 80px;
+.input_container{
+margin: auto;
+width: 80%;
+margin-bottom: 2%;
+    .input_filter{
+    padding: 8px;
+    border: none;
+    border-bottom: 1.5px solid;
+    outline: none;
+    width: 35%;
+    }
+    .input_filter:focus{
+        border-color: #0aaefb;
+    }
+    .btn_add_employee{
+        float: right;
+        background: #8BC34A;
+        padding: 8px;
+        width: 20%;
+        font-weight: bold;
+        font-size: 15px;
+        border-radius: 25px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+    .btn_add_employee:hover{
+        opacity: 0.6;
+    }
+    .btn_add_employee:active{
+        background: #8BC34A; 
+        opacity: 1;
+    }
+}
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 80%;
+        margin: auto;
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #eff4f9;;
+      }
+     
+
+      .form_containers{
+        width: 40%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        margin: auto;
+        background: #eff4f9;
+        margin-bottom: 5%;
+
+        h3{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        input{
+            width: 80%;
+            display: block;
+            margin: auto;
+            margin-bottom: 5%;
+            padding: 8px;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            outline: none;
+
+        }
+
+        ::placeholder {
+           font-size: 15px;
+          }
+        button{
+            font-size: 16px;
+            width: 40%;
+            padding: 6px;
+            background: #00bcd4f5;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            display: block;
+            font-weight: bold;
+            margin: auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        button:hover{
+            opacity: 0.6;
+            transition: 0.3s;
+        }
+        button:active{
+            opacity: 1;
+            background: #00bcd4f5;
+        }
+        button:disabled{
+            cursor: not-allowed;
+        }
+
+      }
+}
