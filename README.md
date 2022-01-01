@@ -4,8 +4,8 @@
 ***
 A little intro about the installation. 
 ```
-$ git clone 
-$ cd 
+$ git clone git@github.com:freeluis/examen-prueba-tecnica.git
+$ cd examen-prueba-tecnica
 $ npm install
 $ npm start
 
